@@ -10,6 +10,11 @@ public class Usuario {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 private Long id;
+public Usuario(String nombre, Long telefono) {
+	
+		this.nombre = nombre;
+		this.telefono = telefono;
+	}
 private String nombre;
 private Long telefono;
 public Long getId() {
